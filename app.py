@@ -58,7 +58,7 @@ def aksial(expression, x_0, epsilon):
         if error < epsilon:
             print
             logger.msg('Error is less than epsilon!')
-            logger.msg('Got solution!', f_min=f_xk, x_min=y[num_j])
+            logger.msg('Got solution!', f_min=f_xk, x_min=y[num_j], k=k + 1)
             return
 
         k += 1
